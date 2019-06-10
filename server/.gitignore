@@ -3,3 +3,5 @@ node_modules
 dev.js
 
 npm-debug.log
+
+client/.env*
