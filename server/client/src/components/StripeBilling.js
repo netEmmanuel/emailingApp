@@ -5,7 +5,6 @@ import * as actions from "../actions";
 
 class StripeBilling extends Component {
   render() {
-    // debugger;
     return (
       <StripeCheckout
         name="EmailCampaign"
@@ -14,7 +13,7 @@ class StripeBilling extends Component {
         token={token => this.props.handleStripeToken(token)}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
       >
-        <button className="btn" />
+        <button className="btn btn-primary">Click To Pay</button>
       </StripeCheckout>
     );
   }
